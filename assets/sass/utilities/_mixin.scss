@@ -31,11 +31,17 @@
     flex-wrap: $wrap;
   }
 
-
+// icon
 @mixin icon($icon,$size:16px) {
   content: $icon;
   float: right;
   font-family: 'fontAwesome';
   font-size: $size;
   text-indent: 0;
+}
+
+// box-shadow
+@mixin boxShadow($horizontal,$vertical,$color) {
+  -webkit-box-shadow: $horizontal $vertical $color;
+  box-shadow: $horizontal $vertical $color;
 }

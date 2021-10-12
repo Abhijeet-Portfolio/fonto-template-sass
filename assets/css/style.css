@@ -354,3 +354,64 @@ header {
   .authors h4 {
     color: #feffff;
     text-transform: capitalize; }
+
+.selling {
+  padding-bottom: 144px;
+  background-color: #b5c4cc; }
+  .selling h2 {
+    padding: 120px 0 75px; }
+  .selling ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between; }
+  .selling li {
+    position: relative;
+    background-color: #ffffff;
+    font-family: "Playfair", serif;
+    -webkit-box-shadow: 7px 6px #a3b1b7;
+    box-shadow: 7px 6px #a3b1b7; }
+    .selling li > span {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 20.8%;
+      min-height: 60px;
+      padding: 7px 3%;
+      border-radius: 50%;
+      position: absolute;
+      top: -18px;
+      right: -8%;
+      background-color: #6799b8;
+      color: #d0cdcb;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase; }
+    .selling li .sale {
+      padding: 22px 0;
+      background-color: #ff8282;
+      font-size: 16px; }
+  .selling h3 {
+    padding: 20px 5% 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600; }
+  .selling h4 {
+    padding: 11px 5% 31px;
+    color: #ff8f8f;
+    font-weight: 600; }
+    .selling h4 span {
+      color: #77a5cc;
+      text-decoration: line-through;
+      text-decoration-color: #ff8f8f; }
+  .selling h5 {
+    padding: 11px 5%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "lato",sans-serif;
+    font-weight: 600; }
