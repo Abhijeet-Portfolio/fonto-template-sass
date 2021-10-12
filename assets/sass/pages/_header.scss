@@ -1,0 +1,67 @@
+/*=================================
+  Header styling starts here
+=================================*/
+
+header {
+  padding-bottom: 499px;
+  background-image: url('https://via.placeholder.com/1349x606/20203e');
+  color: #ffffff;
+
+  .wrapper {
+      padding: 32px 0 37px;
+      @include flex(row,space-between,null,flex-end);
+      position: relative;
+
+      &::before {
+          content: ' ';
+          width: 100%;
+          padding: 1px 0;
+          position: absolute;
+          bottom: 0;
+          background-color: #ffffff;
+      }
+  }
+
+  nav {
+      width: 80%;
+      a {
+          color: inherit;
+          text-transform: capitalize;
+      }
+
+      ul {
+          display: flex;
+          justify-content: flex-end;
+      }
+
+      li { 
+          width: 10%;
+          font-size: 15px;
+          text-align: center;
+      }
+
+      li:nth-child(1)::after,
+      li:nth-child(2)::after,
+      li:nth-child(5)::after {
+          content: '\f107';
+          padding-left: 12%;
+          font-family: 'fontAwesome';
+          font-size: 12px;
+      }
+  }
+
+  .other {
+      span {
+          display: inline-block;
+          text-indent: -9999px;
+
+          &:first-child::after { @include icon('\f290',24px);}
+          &:last-child::after { @include icon('\f002');}
+
+      }
+  }
+}
+
+/*=================================
+  Header styling ends here
+=================================*/  

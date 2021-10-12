@@ -1,0 +1,105 @@
+// slider section start
+
+.slider {
+    padding: 33px 0 37px;
+    background-color: $secondary-background-color;
+
+    .feedbacks {
+        width: 94.5%;
+        @include flex(row,end);
+
+        &::before {
+            content: '\f10e';
+            margin-right: 6%;
+            margin-left: 1.65%;
+            font-family: 'fontAwesome';
+            font-size: 80px;
+        }
+    }
+
+    .feedbacks li { display: none;}
+
+    .feedbacks li:first-child {
+        margin: 20px 0;
+        @include flex(row,space-between);
+    }
+
+    p {
+        width: 80%;
+        color: #feffff;
+        font-family: $primary-font-family;
+        font-size: 35px;
+        font-style: italic;
+        line-height: 1.4;
+    }
+
+    li div { 
+        padding-top: 15px;
+        text-align: center;
+        font-family: $primary-font-family;
+    }
+
+    img { 
+        width: 78%;
+        border-radius: 50%;
+    }
+
+    h3 {
+        margin: 10px 0 2px;
+        color: #feffff;        
+        font-size: 20px;
+    }
+
+    h4 {
+        color: #ca5947;
+        font-size: 18px;
+    }
+
+    .sliderControl {
+        width: 75%;
+        margin: 0 auto;
+        @include flex(row,space-between,null,center);
+    }
+
+    
+    .sliderControl__controls {
+        width: 7.2%;
+        @include flex(row,space-between);
+
+        li {
+            @include boxsizing;
+            width: 45%;
+            padding: 5px 13%;
+            border: 1px solid #ca5947;
+            color: #ca5947;
+            text-indent: -9999px;
+            text-align: center;
+
+            &:first-child::before { @include icon('\f100',18px);}
+            &:last-child::before { @include icon('\f101',18px);}
+        }
+    }
+
+    .sliderControl__dots {
+        width: 55%;
+
+        li {
+            margin-right: 1%;
+            text-indent: -9999px;
+            color: #ca5947;
+            
+
+            &::before { 
+                margin-top: 4px;
+                @include icon('\f1db',12px);
+            }
+        }
+
+        .active::before {
+            @include icon('\f111',12px);
+        }
+    }
+    
+}
+
+// slider section end

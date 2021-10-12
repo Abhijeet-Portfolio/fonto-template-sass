@@ -1,0 +1,24 @@
+// designs section start
+
+.designs {
+    padding-bottom: 151px;
+    background-color: $primary-background-color;    
+
+    ul {
+        @include flex(row,space-between);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        max-height: 1600px;        
+    }
+
+    li {
+        @include boxsizing;
+        width: 48.5%;
+        border: 10px solid #ffffff;
+        margin-bottom: 20px;
+    }
+}
+
+// designs section end

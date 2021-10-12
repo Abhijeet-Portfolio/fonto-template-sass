@@ -1,0 +1,45 @@
+/* 1.2. Clear Fix
+   ========================== */
+
+   .cf:before,
+   .cf:after {
+     display: table;
+     content: " ";
+   }
+   
+   .cf:after { clear: both; }
+   .cf { *zoom: 1; }
+   
+   /*for all*/
+   body {
+     box-sizing: border-box;
+     font-family: sans-serif;
+   }
+   
+   a { 
+     display: inline-block;
+     text-decoration: none; 
+   }
+   
+   li {
+     display: inline-block;
+     list-style-type: none;
+   }
+   
+   /*for wrapper*/
+   .wrapper {
+     max-width: 1349px;
+     width: 94.2%; 
+     margin: 0 auto;
+   }
+
+  //  heading for each section
+   h2 {
+    padding: 75px 0 54px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: $primary-font-family;
+    font-style: italic;
+    font-size: 58px;
+    font-weight: 800;
+  }

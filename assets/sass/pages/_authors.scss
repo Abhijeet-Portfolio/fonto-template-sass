@@ -1,0 +1,29 @@
+// authors section start
+
+.authors {
+    background-color: $primary-background-color;
+
+    h2 { padding: 101px 0 74px;}
+
+    ul {
+        width: 98.6%;
+        margin: 0 auto;
+        @include flex(row,space-between);
+        text-align: center;
+        font-family: $primary-font-family;
+    }
+
+    img { border-radius: 50%;}
+
+    h3 {
+        margin: 12px 0 2px;
+        text-transform: capitalize;
+    }
+
+    h4 {
+        color: #feffff;
+        text-transform: capitalize;
+    }
+}
+
+// authors section end
