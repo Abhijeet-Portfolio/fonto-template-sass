@@ -15,6 +15,7 @@
 
     li {
         @include boxsizing;
+        @include boxShadow(5px, 5px, #a3b1b7);
         width: 48.5%;
         border: 10px solid #ffffff;
         margin-bottom: 20px;

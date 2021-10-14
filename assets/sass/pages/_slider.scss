@@ -74,6 +74,7 @@
             color: #ca5947;
             text-indent: -9999px;
             text-align: center;
+            cursor: pointer;
 
             &:first-child::before { @include icon('\f100',18px);}
             &:last-child::before { @include icon('\f101',18px);}
@@ -87,7 +88,7 @@
             margin-right: 1%;
             text-indent: -9999px;
             color: #ca5947;
-            
+            cursor: pointer;            
 
             &::before { 
                 margin-top: 4px;

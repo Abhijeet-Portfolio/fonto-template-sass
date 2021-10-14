@@ -57,8 +57,14 @@ header {
 
           &:first-child::after { @include icon('\f290',24px);}
           &:last-child::after { @include icon('\f002');}
-
       }
+  }
+
+  .hamburger { 
+        display: none;
+        text-indent: -9999px;
+
+        &::before { @include icon ('\f0c9',25px)}
   }
 }
 

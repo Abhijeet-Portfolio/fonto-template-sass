@@ -1,0 +1,97 @@
+// media queries for hover
+
+@media only screen and (min-width: 1024px) {
+    header a:hover { color: #aaaaaa;}
+
+    .sliderControl__controls li:hover { 
+        background-color: #ca5947;
+        color: #ffffff;
+    }
+
+    .sliderControl__dots li:hover::before { content: '\f111';}
+    .selling h5 a:hover { color: #aaaaaa;}
+    .socialMedia a:hover { color: #ffffff;}
+    .lowerFooter ul:nth-child(2) a:hover { color: #aaaaaa;}
+}
+
+@media only screen and (max-width: 995px) {
+    .selling ul {
+        @include flex(column);
+
+        li { 
+            width: 50%;
+            margin: 20px auto;
+
+            span { width: 14%;}
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .designs li { margin: 20px auto;}
+    .slider .feedbacks li:first-child { @include flex(column-reverse);}
+
+    .slider p { 
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider img { width: 50%;}
+    .slider .sliderControl__controls { width: 12%;}
+    .slider .sliderControl__dots { width: 50%;}
+    .authors ul { @include flex(column);}
+    
+    .authors li {
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    footer .wrapper > ul { 
+        padding: 63px 0 112px;
+        @include flex(column);
+        text-align: center;
+
+        li {
+            width: 60%;
+            margin: 30px auto;
+
+            &:first-child { width: 60%;}
+        }
+    }
+
+    footer .lowerFooter { 
+        @include flex(column);
+
+        .socialMedia {
+            width: 20%;
+            margin: 5px auto;
+        }
+
+        ul:nth-child(2) {
+            width: 40%;
+            margin: 5px auto;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        nav { display: none;}
+        .other { display: none;}
+        .hamburger { display: block;}
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    h2 { font-size: 35px;}
+    .designs li { width: 70%;}
+    .slider .feedbacks p { font-size: 25px;}
+    .selling ul li { 
+        width: 80%;
+
+        span { width: 19%;}
+    }
+}
